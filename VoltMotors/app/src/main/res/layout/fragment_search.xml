@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_35sdp"
+    android:layout_marginLeft="@dimen/_35sdp"
+    android:layout_marginRight="@dimen/_35sdp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchFragment">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:hint="Search..."
+        android:drawableLeft="@drawable/search"
+        android:drawableTint="@color/main"
+        android:drawablePadding="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:background="@drawable/input_background"
+        android:textColor="@color/main"
+        android:textColorHint="@color/main"
+        android:layout_height="@dimen/_40sdp"/>
+    <TextView
+        android:id="@+id/numResults"
+        android:text="10 results found"
+        android:textColor="@color/main"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>
